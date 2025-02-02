@@ -1,1 +1,114 @@
 
+body {
+background-color: #ead6cb;
+font-family: "Kalnia", serif;
+font-size: 16px;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:"wdth" 100;
+line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+color: #0b2639;
+}
+
+h1, h2, h3, h4 {
+line-height: 1.4; /* set line height of headings to 1.4 times font */
+}
+
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+
+p {
+font-size: 16px; /* set font size to 16px */
+line-height: 1.2; /* set line height to 1.2 times font size */
+font-style: italic; /*set font style to italic */
+}
+
+img {
+    width: 100%;
+  }
+
+  a {
+    color: darkslategray;
+    text-decoration: none; /* No underlining */
+  }
+ 
+  a:visited { /* visited link */
+    color: #0B2639;
+  }
+
+  a:hover {
+    color: black;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+
+  a:active { /* selected link */
+    color: #B57765;
+  }
+
+  a:focus {
+  color: black;
+  text-decoration: underline;
+}
+
+
+.button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #CF5D27;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #B57765; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+
+  .button:hover {
+    background-color: #B57765;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .button:active { /* selected link */
+    background-color: gray;
+    color: black;
+  }
+
+  .button:focus {
+    color: black;
+    text-decoration: underline;
+  }
+  
+
+    .button.contact {
+        background-color: transparent;
+        color: black;
+        text-transform: uppercase;
+        border: 2px solid black;
+      }
+
+      .button.contact:hover {
+        background-color: #B57765;
+        color: black;
+        text-decoration: underline;
+      }
+
+      .button.contact:active {
+        background-color: gray;
+        color: #B57765;
+      }
