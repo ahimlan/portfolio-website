@@ -4,118 +4,335 @@ Primary Color (Beige Pink): #EAD6CB;
 Secondary Color (Brown Pink): #B57765;
 Tertiary Color (Navy): 0B2639;
 Quarternary Color (Orange): CF5D27
+Quanternary Color (Lighter Orange): E38C64
 */
 
-body {
-background-color: #ead6cb;
-font-family: "Kalnia", serif;
-font-size: 16px;
-font-weight: 400;
-font-style: normal;
-font-variation-settings:"wdth" 100;
-line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-color: #0b2639;
+header {
+  background-color: #E38C64;
+  padding: 40px 0;
+  margin: px;
+  border-bottom: 5px solid #EAD6CB;
+  text-align: center;
+  width: [object Object]px;
+  height: [object Object]px;
+  background: #E38C64;
+  border-bottom: solid #EAD6CB 10px;
+  box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
+  position: fixed;
+  width: 100%;
 }
 
-h1, h2, h3, h4 {
-line-height: 1.4; /* set line height of headings to 1.4 times font */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ead6cb;
+  font-family: "Kalnia", serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #0b2639;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+  /* set line height of headings to 1.4 times font */
 }
 
 h1 {
-    font-size: 2.75em;
-    font-weight: 700;
-  }
-  
-  h2 {
-    font-size: 2.25em;
-    font-weight: 700;
-  }
-  
-  h3 {
-    font-size: 1.75em;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 1.35em;
-    font-weight: 400;
-  }
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
 
 p {
-font-size: 16px; /* set font size to 16px */
-line-height: 1.2; /* set line height to 1.2 times font size */
-font-style: italic; /*set font style to italic */
+  font-size: 16px;
+  /* set font size to 16px */
+  line-height: 1.2;
+  /* set line height to 1.2 times font size */
+  font-style: italic;
+  /*set font style to italic */
 }
 
 img {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  a {
-    color: darkslategray;
-    text-decoration: none; /* No underlining */
-  }
- 
-  a:visited { /* visited link */
-    color: #0B2639;
-  }
+a {
+  color: #ffffff;
+  text-decoration: none;
+  /* No underlining */
+}
 
-  a:hover {
-    color: black;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
+nav>ul>li>a:visited {
+  /* visited link */
+  color: #ffffff;
+}
 
-  a:active { /* selected link */
-    color: #B57765;
-  }
+nav>ul>li>a:hover {
+  color: #0B2639;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
 
-  a:focus {
+nav>ul>li>a:active {
+  /* selected link */
+  color: #B57765;
+}
+
+
+a:focus {
   color: black;
   text-decoration: underline;
 }
 
 
 .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #CF5D27;
-    color: #ffffff; /* needed to override the default link color */
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #B57765; /* width of the border, type, color */
-    transition: 0.2s opacity;
-  }
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #E38C64;
+  color: #ffffff;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #B57765;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
 
-  .button:hover {
-    background-color: #B57765;
-    color: black;
-    text-decoration: underline;
-  }
-  
-  .button:active { /* selected link */
-    background-color: gray;
-    color: black;
-  }
+.button:hover {
+  background-color: b57765;
+  color: black;
+  text-decoration: underline;
+}
 
-  .button:focus {
-    color: black;
-    text-decoration: underline;
-  }
-  
+.button:active {
+  /* selected link */
+  background-color: gray;
+  color: black;
+}
 
-    .button.contact {
-        background-color: transparent;
-        color: black;
-        text-transform: uppercase;
-        border: 2px solid black;
-      }
+.button:focus {
+  color: black;
+  text-decoration: underline;
+}
 
-      .button.contact:hover {
-        background-color: #B57765;
-        color: black;
-        text-decoration: underline;
-      }
+.button.contact {
+  background-color: EAD6CB;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border-bottom: 2px solid #B57765;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
 
-      .button.contact:active {
-        background-color: gray;
-        color: #B57765;
-      }
+.button.contact:hover {
+  background-color: #B57765;
+  color: black;
+  text-decoration: underline;
+}
+
+.button.contact:active {
+  background-color: gray;
+  color: #B57765;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.container h1 {
+  padding: 10px;
+  text-align: center;
+}
+
+#skills h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+#skills h3 {
+  text-align: left;
+  padding: 20px;
+}
+
+#mystory h2, p {
+  text-align: center;
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#mystory 
+{
+display: inline-block;
+text-align: center;
+margin: 0;
+  padding: 0.67em 0;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom:
+    1px solid #0B2639;
+}
+
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#work h3, p {
+  text-align: left;
+  /* Centers text */
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#hero p {
+  text-align: center;
+  /* Centers text */
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#hero {
+  background-color: #E38C64;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  border-bottom:
+  10px solid #0B2639;
+ }
+
+ #work h2 {
+  text-align: center;
+  /* Centers text */
+  margin: 0;
+  padding: 0.67em 0;
+ }
+
+#contact {
+  text-align: center;
+}
+
+#contact p {
+  text-align: center;
+}
+
+#contact ul > li {
+display: inline-block;
+padding: 0px;
+text-align: center;
+}
+
+#about h1 {
+  text-align: center;
+  /* Centers text */
+  margin: 0;
+  padding: 60px;
+}
+
+
+.center {
+  text-align: center;
+  max-width: 250px;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav>ul {
+  display: inline-block;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+  padding: 15px;
+}
+
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+ display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 317px;
+}
+
+
+#viaeurasia h2 {
+  text-align: center;
+}
+
+#viaeurasia p {
+  text-align: left;
+}
+
+#myprocess h3, p {
+  text-align: left;
+}
+
+#myprocess h2 {
+  text-align: center;
+}
+
+#myprocess .row {
+  padding-bottom: 25px;
+  border-bottom:
+    1px solid #0B2639;
+}
+
+#skills ul>li>a {
+  color: #0b2639;
+  text-decoration: underline;
+}
+
+#skills .row {
+  padding-bottom: 25px;
+  border-bottom:
+    1px solid #0B2639;
+}
+
