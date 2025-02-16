@@ -1,1 +1,2 @@
-alert("Hi!  So glad you came to visit!");
+alert("Thanks for visiting my Portfolio Site!")
+console.log("Thanks for visiting my Portfolio Site!")
