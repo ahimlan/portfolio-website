@@ -12,7 +12,6 @@ header {
   padding: 10px 0;
   margin: 0;
   border-bottom: 5px solid #EAD6CB;
-  text-align: center;
   width: [object Object];
   height: [object Object];
   background: #E38C64;
@@ -289,20 +288,16 @@ p {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 nav>ul {
-  display: inline-block;
-  width: 100%;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-  padding: 15px;
-}
+
 
 
 nav>ul>li>a {
@@ -354,172 +349,268 @@ p {
   padding-bottom: 20px;
 }
 
-/* Small devices (320px and larger) */
-@media only screen and (min-width: 320px) {
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+  
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  
+}
+
+/* Small devices (320px and larger) */
+@media only screen and (min-width: 320px) {}
+
+.navtoggle li .icon {
+  display: inline-block;
+  padding: 40px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+header {
+  padding: 40px 0 13px;
+  min-width: 340px
+}
+
+.logo {
+  min-width: 225px;
+  padding-left: 15px; 
+  padding-bottom: 15px;
+}
+
+#hero {
+  margin-top: 40px;
+}
+
+
+#about h1 {
+  padding-top: 50px;
+  margin-bottom: 5px;
+  font-size: 20;
+}
+
+#viaeurasia h2 {
+  margin-top: 40px;
+  font-size: 16;
+}
+
+/* Medium devices (640px and larger) */
+@media only screen and (min-width: 640px) {
+  
+  nav>ul>li {
+    display: inline-block;
+    padding: 15px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+  
   header {
-    margin-bottom: 20px;
+    text-align: unset;
+    padding: 20px 0 13px;
+    min-width: 641px
+  }
+
+  .logo {
+    vertical-align: middle;
+    min-width: 275px;
+  }
+
+  .container {
+    margin-left: 25px;
+    margin-right: auto;
+  }
+
+  #hero {
+    margin-top: 40px;
+  }
+
+  #viaeurasia h2 {
+    margin-top: 50px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    vertical-align: middle;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  #skills {
+    float: left;
+    padding: 10px;
   }
 
   #about h1 {
-    padding-top: 160px;
-    margin-bottom: 5px;
+    margin: 20px 10px;
+    padding-top: 80px;
   }
 
-  /* Medium devices (640px and larger) */
-  @media only screen and (min-width: 640px) {
-    header {
-      text-align: unset;
-      padding: 20px 0 13px;
-    }
-
-    #hero {
-      margin-top: 30px;
-    }
-
-    #viaeurasia h2 {
-      margin-top: 50px;
-    }
-
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-    }
-
-    #skills {
-      float: left;
-      padding: 10px;
-    }
-
-    #about h1 {
-      margin: 20px 10px;
-      padding-top: 50px;
-    }
-
-    .col-md-6 {
-      width: 50%;
-    }
-
-    .col-md-12 {
-      width: 100%;
-    }
-
-    [class*="col-"] {
-      float: left;
-      padding: 10px;
-    }
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    #about-page h2,
-    h3 {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
+  .col-md-6 {
+    width: 50%;
   }
 
-  /* lg devices (1024px and larger) */
-  @media only screen and (min-width: 1024px) {
-
-    #mystory h2 {
-      text-align: left;
-    }
-
-    #skills h2 {
-      text-align: left;
-      padding-left: 30px;
-      margin-top: 15px;
-    }
-
-    #myresume {
-      float: left;
-    }
-
-    #about h1 {
-      margin: 20px 10px;
-      padding-top: 50px;
-    }
-
-    .col-lg-12 {
-      width: 100%;
-    }
-
-    .col-lg-7 {
-      width: 65%;
-    }
-
-    .col-lg-5 {
-      width: 35%;
-    }
-
-    [class*="col-"] {
-      float: left;
-      padding: 30px;
-    }
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .col-md-12 {
+    width: 100%;
   }
 
-  /* xlg devices (1440px and larger) */
-  @media only screen and (min-width: 1440px) 
-
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-
-    50% {
-      fill: #fcffad;
-    }
-
-    100% {
-      fill: #f76414;
-    }
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
   }
 
-  .sun {
-    animation: 4s color-change infinite alternate linear;
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
+  #about-page h2,
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 
-    to {
-      transform: translate(200px, 50px);
-    }
+/* lg devices (1024px and larger) */
+@media only screen and (min-width: 1024px) {
+
+  .logo {
+    min-width: 341px;
+    margin-left: 15px;
   }
 
-  .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 20px;
+    vertical-align: middle;
   }
 
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-
-    to {
-      transform: translate(100px, 48px);
-    }
+  #hero {
+    margin-top: 80px;
   }
 
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+  #mystory h2 {
+    text-align: left;
   }
+
+  #skills h2 {
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 15px;
+  }
+
+  #myresume {
+    float: left;
+  }
+
+  #about h1 {
+    margin: 20px 10px;
+    padding-top: 80px;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .col-lg-7 {
+    width: 65%;
+  }
+
+  .col-lg-5 {
+    width: 35%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 30px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #viaeurasia h2 {
+    margin-top: 80px;
+  }
+ 
+}
+
+/* xlg devices (1440px and larger) */
+@media only screen and (min-width: 1440px) @keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
