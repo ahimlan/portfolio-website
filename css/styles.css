@@ -8,14 +8,11 @@ Quanternary Color (Lighter Orange): E38C64
 */
 
 header {
-  background-color: #E38C64;
+  background-color: #de794b;
   padding: 10px 0;
-  margin: 0;
-  border-bottom: 5px solid #EAD6CB;
   width: [object Object];
   height: [object Object];
-  background: #E38C64;
-  border-bottom: solid #EAD6CB 10px;
+  background: #de794b;
   box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
   -webkit-box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
   -moz-box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
@@ -29,22 +26,20 @@ header {
 
 body {
   background-color: #ead6cb;
-  font-family: "Kalnia", serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: #0b2639;
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #2f2e2d;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  line-height: 1.4;
-  /* set line height of headings to 1.4 times font */
+  line-height: 1.4; /* set line height of headings to 1.4 times font */
 }
 
 h1 {
@@ -68,12 +63,9 @@ h4 {
 }
 
 p {
-  font-size: 16px;
-  /* set font size to 16px */
-  line-height: 1.2;
-  /* set line height to 1.2 times font size */
-  font-style: italic;
-  /*set font style to italic */
+  font-size: 16px; /* set font size to 16px */
+  line-height: 1.2; /* set line height to 1.2 times font size */
+  font-style: italic; /* set font style to italic */
 }
 
 img {
@@ -81,51 +73,44 @@ img {
 }
 
 a {
-  color: #ffffff;
-  text-decoration: none;
-  /* No underlining */
+  color: #fff;
+  text-decoration: none; /* No underlining */
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   /* visited link */
-  color: #ffffff;
+  color: #fff;
 }
 
-nav>ul>li>a:hover {
-  color: #0B2639;
-  text-decoration: underline;
-  /* Underlining when hovering over a link */
+nav > ul > li > a:hover {
+  color: #0b2639;
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
 
-nav>ul>li>a:active {
+nav > ul > li > a:active {
   /* selected link */
-  color: #B57765;
+  color: #b57765;
 }
-
 
 a:focus {
   color: black;
   text-decoration: underline;
 }
 
-
 .button {
-  display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #E38C64;
-  color: #ffffff;
-  /* needed to override the default link color */
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #2f2e2d;
+  color: #fff; /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #B57765;
-  /* width of the border, type, color */
+  border: 4px solid #de794b; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  background-color: #B57765;
+  background-color: #fff;
   color: black;
   text-decoration: underline;
   opacity: 0.8;
@@ -143,24 +128,23 @@ a:focus {
 }
 
 .button.contact {
-  background-color: #E38C64;
-  color: #ffffff;
+  background-color: #2f2e2d;
+  color: #fff;
   text-transform: uppercase;
   border-radius: 3px;
-  border-bottom: 2px solid #B57765;
-  /* width of the border, type, color */
+  border: 4px solid #de794b; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button.contact:hover {
-  background-color: #B57765;
+  background-color: #fff;
   color: black;
   text-decoration: underline;
 }
 
 .button.contact:active {
   background-color: gray;
-  color: #B57765;
+  color: #b57765;
 }
 
 /* Layout styling */
@@ -179,8 +163,7 @@ a:focus {
 }
 
 #skills h3 {
-
-  padding: 0px;
+  padding: 0;
 }
 
 #mystory h2,
@@ -198,47 +181,43 @@ p {
 }
 
 .row {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom:
-    1px solid #0B2639;
+  border-bottom: 1px solid #0b2639;
 }
 
-
 #hero h1 {
-  text-align: center;
-  /* Centers text */
+  text-align: center; /* Centers text */
   margin: 0;
   padding: 0.67em 0;
 }
 
 #work h3,
 p {
-  text-align: left;
-  /* Centers text */
+  text-align: left; /* Centers text */
   margin: 0;
   padding: 0.67em 0;
 }
 
 #hero p {
-  text-align: center;
-  /* Centers text */
+  text-align: center; /* Centers text */
   margin: 0;
-  padding: .67em 0;
+  padding: 0.67em 0;
 }
 
 #hero {
-  background-color: #E38C64;
-  padding: 10px 10px;
+  background-color: #ead6cb;
+  padding: 10px;
   margin-top: 150px;
   display: inline-block;
   width: 100%;
-  border-bottom:
-    10px solid #0B2639;
+  border-bottom: solid #ead6cb 10px;
+  box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
 }
 
 #hero span {
@@ -246,8 +225,7 @@ p {
 }
 
 #work h2 {
-  text-align: center;
-  /* Centers text */
+  text-align: center; /* Centers text */
   margin: 0;
   padding: 0.67em 0;
 }
@@ -260,22 +238,20 @@ p {
   text-align: center;
 }
 
-#contact ul>li {
+#contact ul > li {
   display: inline-block;
-  padding: 0px;
+  padding: 0;
   text-align: center;
 }
 
 #contact .getintouch {
-  border-top: solid #0B2639;
+  border-top: solid #0b2639;
 }
 
 #about h1 {
-  text-align: center;
-  /* Centers text */
-
-  padding: 40px 0;
-
+  text-align: center; /* Centers text */
+  padding: 0.67em 0;
+  font-size: 45px;
 }
 
 #myresume {
@@ -291,20 +267,17 @@ p {
   max-width: 150px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-
-
-
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 30px 5px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   display: inline-block;
   width: 100%;
 }
@@ -313,12 +286,10 @@ main {
   padding-top: 150px;
 }
 
-
 #viaeurasia h2 {
   text-align: center;
   padding: 20px;
   margin-top: 160px;
-
 }
 
 #viaeurasia p {
@@ -336,11 +307,10 @@ p {
 
 #myprocess .row {
   padding-bottom: 25px;
-  border-bottom:
-    1px solid #0B2639;
+  border-bottom: 1px solid #0b2639;
 }
 
-#skills ul>li>a {
+#skills ul > li > a {
   color: #0b2639;
   text-decoration: underline;
 }
@@ -353,9 +323,9 @@ p {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
-  
 }
 
 .navtoggle li .icon {
@@ -366,54 +336,50 @@ p {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
-  
 }
 
 /* Small devices (320px and larger) */
-@media only screen and (min-width: 320px) {}
+@media only screen and (min-width: 320px) {
+  .navtoggle li .icon {
+    display: inline-block;
+    margin-top: 60px;
+    text-align: right;
+    vertical-align: middle;
+  }
 
-.navtoggle li .icon {
-  display: inline-block;
-  padding: 40px;
-  text-align: right;
-  vertical-align: middle;
-}
+  header {
+    padding: 5px;
+    min-width: 340px;
+  }
 
-header {
-  padding: 40px 0 13px;
-  min-width: 340px
-}
+  .logo {
+    min-width: 225px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+  }
 
-.logo {
-  min-width: 225px;
-  padding-left: 15px; 
-  padding-bottom: 15px;
-}
+  #hero {
+    margin-top: 70px;
+  }
 
-#hero {
-  margin-top: 40px;
-}
+  #about h1 {
+    padding-top: 70px;
+    margin-bottom: 5px;
+  }
 
-
-#about h1 {
-  padding-top: 50px;
-  margin-bottom: 5px;
-  font-size: 20;
-}
-
-#viaeurasia h2 {
-  margin-top: 40px;
-  font-size: 16;
+  #viaeurasia h2 {
+    margin-top: 90px;
+    font-size: 30px;
+  }
 }
 
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
-  
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
-    padding: 15px;
+    padding: 20px;
   }
 
   .navtoggle li:not(:last-child) {
@@ -423,11 +389,11 @@ header {
   .navtoggle li:last-child {
     display: none;
   }
-  
+
   header {
     text-align: unset;
-    padding: 20px 0 13px;
-    min-width: 641px
+    padding: 0;
+    min-width: 641px;
   }
 
   .logo {
@@ -441,17 +407,21 @@ header {
   }
 
   #hero {
-    margin-top: 40px;
+    margin-top: 90px;
+  }
+
+  h1 {
+    font-size: 40px;
   }
 
   #viaeurasia h2 {
-    margin-top: 50px;
+    margin-top: 120px;
   }
 
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 60px;
     vertical-align: middle;
   }
 
@@ -466,7 +436,7 @@ header {
 
   #about h1 {
     margin: 20px 10px;
-    padding-top: 80px;
+    padding-top: 115px;
   }
 
   .col-md-6 {
@@ -497,7 +467,6 @@ header {
 
 /* lg devices (1024px and larger) */
 @media only screen and (min-width: 1024px) {
-
   .logo {
     min-width: 341px;
     margin-left: 15px;
@@ -506,12 +475,12 @@ header {
   nav {
     width: auto;
     float: right;
-    margin-top: 20px;
+    margin-top: 90px;
     vertical-align: middle;
   }
 
   #hero {
-    margin-top: 80px;
+    margin-top: 160px;
   }
 
   #mystory h2 {
@@ -530,7 +499,7 @@ header {
 
   #about h1 {
     margin: 20px 10px;
-    padding-top: 80px;
+    padding-top: 200px;
   }
 
   .col-lg-12 {
@@ -563,24 +532,20 @@ header {
   }
 
   #viaeurasia h2 {
-    margin-top: 80px;
+    margin-top: 200px;
   }
- 
+
 }
 
 /* xlg devices (1440px and larger) */
-@media only screen and (min-width: 1440px) @keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
+@media only screen and (min-width: 1440px) {
 
-  50% {
-    fill: #fcffad;
-  }
+}
 
-  100% {
-    fill: #f76414;
-  }
+@keyframes color-change {
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
 
 .sun {
