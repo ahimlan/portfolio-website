@@ -144,7 +144,7 @@ a:focus {
 
 .button.contact:active {
   background-color: gray;
-  color: #b57765;
+  color: #fff;
 }
 
 /* Layout styling */
