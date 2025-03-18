@@ -104,7 +104,6 @@ a:focus {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border: 4px solid #border-radius: 3px;
   border: 4px solid #F9DED1; /* width of the border, type, color */; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
