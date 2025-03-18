@@ -8,11 +8,10 @@ Quanternary Color (Lighter Orange): E38C64
 */
 
 header {
-  background-color: #de794b;
+  background-color: #F9DED1;
   padding: 10px 0;
   width: [object Object];
   height: [object Object];
-  background: #de794b;
   box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
   -webkit-box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
   -moz-box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
@@ -25,7 +24,7 @@ header {
 }
 
 body {
-  background-color: #ead6cb;
+  background-color: #FAF9F6;
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -73,13 +72,13 @@ img {
 }
 
 a {
-  color: #fff;
+  color: #2F2E2D;
   text-decoration: none; /* No underlining */
 }
 
 nav > ul > li > a:visited {
   /* visited link */
-  color: #fff;
+  color: #2F2E2D;
 }
 
 nav > ul > li > a:hover {
@@ -105,7 +104,8 @@ a:focus {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border: 4px solid #de794b; /* width of the border, type, color */
+  border: 4px solid #border-radius: 3px;
+  border: 4px solid #F9DED1; /* width of the border, type, color */; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -132,7 +132,7 @@ a:focus {
   color: #fff;
   text-transform: uppercase;
   border-radius: 3px;
-  border: 4px solid #de794b; /* width of the border, type, color */
+  border: 4px solid #F9DED1; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -209,12 +209,12 @@ p {
 }
 
 #hero {
-  background-color: #ead6cb;
+  background-color: #FAF9F6;
   padding: 10px;
   margin-top: 150px;
   display: inline-block;
   width: 100%;
-  border-bottom: solid #ead6cb 10px;
+  
   box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
   -webkit-box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
   -moz-box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
@@ -269,15 +269,13 @@ p {
 
 nav > ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 nav > ul > li > a {
-  padding: 30px 5px;
+  padding-top: 70px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #fff;
+  color: #2F2E2D;
   display: inline-block;
   width: 100%;
 }
@@ -344,33 +342,31 @@ p {
 @media only screen and (min-width: 320px) {
   .navtoggle li .icon {
     display: inline-block;
-    margin-top: 60px;
     text-align: right;
     vertical-align: middle;
   }
 
   header {
-    padding: 5px;
+    padding: 10px;
     min-width: 340px;
   }
 
   .logo {
-    min-width: 225px;
-    padding-left: 15px;
-    padding-bottom: 5px;
+    min-width: 100px;
+    padding-top: 30px;
   }
 
   #hero {
-    margin-top: 70px;
+    margin-top: 40px;
   }
 
   #about h1 {
-    padding-top: 70px;
+    padding-top: 50px;
     margin-bottom: 5px;
   }
 
   #viaeurasia h2 {
-    margin-top: 90px;
+    margin-top: 60px;
     font-size: 30px;
   }
 }
@@ -379,11 +375,12 @@ p {
 @media only screen and (min-width: 640px) {
   nav > ul > li {
     display: inline-block;
-    padding: 20px;
+    width: 80px;
   }
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
+    margin-left: 15px;
   }
 
   .navtoggle li:last-child {
@@ -398,7 +395,8 @@ p {
 
   .logo {
     vertical-align: middle;
-    min-width: 275px;
+    min-width: 150px;
+    padding-bottom: 30px;
   }
 
   .container {
@@ -407,7 +405,7 @@ p {
   }
 
   #hero {
-    margin-top: 90px;
+    margin-top: 20px;
   }
 
   h1 {
@@ -415,13 +413,13 @@ p {
   }
 
   #viaeurasia h2 {
-    margin-top: 120px;
+    margin-top: 60px;
   }
 
   nav {
     width: auto;
     float: right;
-    margin-top: 60px;
+    margin-right: 20px;
     vertical-align: middle;
   }
 
@@ -436,7 +434,7 @@ p {
 
   #about h1 {
     margin: 20px 10px;
-    padding-top: 115px;
+    padding-top: 50px;
   }
 
   .col-md-6 {
@@ -468,19 +466,20 @@ p {
 /* lg devices (1024px and larger) */
 @media only screen and (min-width: 1024px) {
   .logo {
-    min-width: 341px;
+    min-width: 150px;
     margin-left: 15px;
   }
 
   nav {
     width: auto;
     float: right;
-    margin-top: 90px;
+    margin-top: 0;
+    margin-right: 20px;
     vertical-align: middle;
   }
 
   #hero {
-    margin-top: 160px;
+    margin-top: 20px;
   }
 
   #mystory h2 {
@@ -499,7 +498,7 @@ p {
 
   #about h1 {
     margin: 20px 10px;
-    padding-top: 200px;
+    padding-top: 50px;
   }
 
   .col-lg-12 {
@@ -532,7 +531,7 @@ p {
   }
 
   #viaeurasia h2 {
-    margin-top: 200px;
+    margin-top: 40px;
   }
 
 }
