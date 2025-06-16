@@ -213,7 +213,6 @@ p {
   margin-top: 150px;
   display: inline-block;
   width: 100%;
-  
   box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
   -webkit-box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
   -moz-box-shadow: 5px 5px 20px rgba(11, 38, 57, 0.5);
@@ -289,6 +288,12 @@ main {
   margin-top: 160px;
 }
 
+#quicknotes h2 {
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
 #viaeurasia p {
   text-align: left;
 }
@@ -340,7 +345,6 @@ p {
 /* Small devices (320px and larger) */
 @media only screen and (min-width: 320px) {
   .navtoggle li .icon {
-    
     text-align: right;
     vertical-align: middle;
   }
@@ -530,7 +534,7 @@ p {
   }
 
   #viaeurasia h2 {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 
 }
